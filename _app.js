@@ -48,7 +48,7 @@ var httpsSvr = _app.httpsSvr = $https.createServer(httpsOpt, koaSvr.callback());
 (function () {
     _app.httpSvr.listen(_app.hostPort);
     //_qn.start();
-    __infohdlr('Server is running on:' + _app.hostPort);
+    __infohdlr('Server is running on:' + _app.hostPort + '!');
 })();
 
 /*使用body解析器

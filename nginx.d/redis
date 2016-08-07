@@ -27,7 +27,7 @@ case "$1" in
                 fi
                 ;;
         stop)
-                if [ ! -f $PIDFILE ]
+                if [ -f $PIDFILE ]
                 then
                         echo "$PIDFILE exists, process is not running."
                 else
